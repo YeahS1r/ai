@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ef3e2f">
+  <meta name="description" content="陈日坚的个人主页，收录 AI 课程练习、数据分析和创作实验。">
+  <title>陈日坚｜AI 学习作品集</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <style>
+    :root{--paper:#f3f0e8;--ink:#171717;--red:#ef3e2f;--blue:#2457d6;--yellow:#f4cf38;--line:#171717;--muted:#67645e;--white:#fffdf7;--mono:Consolas,"SFMono-Regular",monospace;--sans:Arial,"Microsoft YaHei","PingFang SC",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55}a{color:inherit}button,a{touch-action:manipulation}.wrap{width:min(1240px,calc(100% - 48px));margin:auto}.topline{border-bottom:2px solid var(--ink);font:12px var(--mono);letter-spacing:.08em;padding:12px 0;display:flex;justify-content:space-between;align-items:center;text-transform:uppercase}.site-name{font-weight:700}.topline nav{display:flex;gap:20px}.topline nav a{text-decoration:none}.topline nav a:hover,.topline nav a:focus-visible{color:var(--red)}.hero{padding:clamp(48px,9vw,118px) 0 58px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-95px;top:8px;width:310px;height:310px;background:repeating-linear-gradient(135deg,var(--red) 0 9px,transparent 9px 18px);opacity:.9;transform:rotate(12deg);z-index:-1}.eyebrow,.tag{font:700 12px var(--mono);letter-spacing:.07em;text-transform:uppercase}.eyebrow{color:var(--red);display:flex;gap:10px;align-items:center}.eyebrow:before{content:"";height:3px;width:30px;background:currentColor}.hero h1{font-size:clamp(48px,9vw,116px);letter-spacing:-.075em;line-height:.97;max-width:980px;margin:25px 0 22px;font-weight:900}.hero h1 em{font-style:normal;color:var(--red);white-space:nowrap}.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;border-top:2px solid var(--ink);padding-top:18px}.hero-bottom p{font-size:clamp(16px,2vw,21px);max-width:620px;margin:0}.hero-meta{font:12px var(--mono);text-align:right;white-space:nowrap}.hero-meta b{font-size:40px;line-height:1;display:block;color:var(--blue)}.section-head{display:flex;justify-content:space-between;align-items:end;border-bottom:2px solid var(--ink);padding-bottom:13px;margin-bottom:24px}.section-head h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.05em;margin:0;line-height:1}.section-head span{font:12px var(--mono);color:var(--muted)}.about{padding:22px 0 56px}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr .8fr;border:2px solid var(--ink);background:var(--white);box-shadow:7px 7px 0 var(--blue)}.about-grid>*{padding:clamp(20px,3vw,34px)}.about-grid>*+*{border-left:2px solid var(--ink)}.about-lead{font-size:clamp(30px,4vw,50px);font-weight:900;letter-spacing:-.06em;line-height:1.05}.about-copy{font-size:18px;margin:0}.about-meta{font:12px var(--mono);display:grid;gap:16px}.about-meta div{border-bottom:1px solid var(--ink);padding-bottom:8px}.about-meta b{display:block;color:var(--red);margin-bottom:4px}.works{padding:36px 0 84px}.project{border:2px solid var(--ink);background:var(--white);margin-bottom:26px;position:relative;box-shadow:7px 7px 0 var(--ink)}.project-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:2px solid var(--ink);font:12px var(--mono)}.project-top .number{color:var(--red);font-weight:700}.project-top .type{color:var(--muted)}.project-body{display:grid;grid-template-columns:1fr 1fr;min-height:340px}.project-copy{padding:clamp(22px,4vw,48px);display:flex;flex-direction:column;align-items:flex-start}.project-copy h3{font-size:clamp(30px,4vw,52px);letter-spacing:-.06em;line-height:1.08;margin:10px 0 16px}.project-copy p{max-width:470px;color:#3e3c38;margin:0 0 22px}.project-copy .tag{background:var(--yellow);padding:5px 8px}.project-visual{min-height:280px;border-left:2px solid var(--ink);position:relative;overflow:hidden;background:#e2e4db}.project-visual.dashboard{background:#d8e6f4;padding:22px;display:flex;align-items:center;justify-content:center}.dashboard-cover{width:100%;height:100%;min-height:270px;background:var(--white);border:2px solid var(--ink);padding:20px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:5px 5px 0 var(--blue)}.dash-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #bbb;padding-bottom:10px;font:700 12px var(--mono)}.dash-head i{display:inline-block;width:9px;height:9px;background:var(--red);border-radius:50%;margin-right:5px}.bars{display:flex;align-items:end;gap:9px;height:100px;border-bottom:2px solid var(--ink);padding:0 12px}.bars i{flex:1;background:var(--blue);border:1px solid var(--ink)}.bars i:nth-child(1){height:36%}.bars i:nth-child(2){height:65%}.bars i:nth-child(3){height:48%}.bars i:nth-child(4){height:85%;background:var(--red)}.bars i:nth-child(5){height:58%}.bars i:nth-child(6){height:74%}.dash-foot{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--muted)}.btn{display:inline-flex;align-items:center;gap:13px;text-decoration:none;background:var(--ink);color:white;padding:12px 16px;font:700 12px var(--mono);border:2px solid var(--ink);transition:.18s}.btn:hover,.btn:focus-visible{background:var(--red);border-color:var(--red);transform:translate(2px,-2px)}.btn .arrow{font-size:18px;line-height:.7}.project-body.reverse .project-copy{order:2}.project-body.reverse .project-visual{order:1;border-left:0;border-right:2px solid var(--ink)}.flow-visual{background:#fff!important;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:0}.flow-visual img{width:100%;height:100%;object-fit:cover;min-height:150px}.flow-visual img:first-child{border-right:1px solid var(--ink);border-bottom:1px solid var(--ink)}.flow-visual img:nth-child(2){border-bottom:1px solid var(--ink)}.flow-visual img:nth-child(3){grid-column:1/3;object-fit:contain;background:#f7f8f9;min-height:200px}.video-wrap{background:var(--yellow);display:flex;align-items:center;justify-content:center;padding:22px}.video-wrap video{width:100%;height:100%;max-height:360px;object-fit:contain;background:#111;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--red)}.contact{padding:4px 0 84px}.contact-card{border:2px solid var(--ink);background:var(--red);color:var(--white);padding:clamp(26px,5vw,58px);display:grid;grid-template-columns:1.25fr .75fr;gap:34px;align-items:end;box-shadow:7px 7px 0 var(--ink)}.contact-card h2{font-size:clamp(40px,7vw,82px);letter-spacing:-.07em;line-height:.95;margin:0 0 18px}.contact-card p{max-width:600px;margin:0;font-size:17px}.contact-links{display:grid;gap:12px}.contact-item{border:2px solid var(--white);padding:14px 16px;font:700 12px var(--mono);display:flex;justify-content:space-between}.contact-item span:last-child{color:var(--yellow)}.footer{background:var(--ink);color:var(--paper);padding:22px 0;font:12px var(--mono)}.footer .wrap{display:flex;justify-content:space-between;gap:20px}.footer span:last-child{color:var(--yellow)}
+    @media(max-width:760px){.wrap{width:min(100% - 32px,600px)}.topline{font-size:10px;align-items:flex-start}.topline nav{gap:10px;flex-wrap:wrap;justify-content:flex-end;max-width:58%}.hero{padding:58px 0 42px}.hero:after{right:-185px;top:-70px;opacity:.55}.hero-bottom{align-items:flex-start;flex-direction:column}.hero-meta{text-align:left;display:flex;align-items:center;gap:12px}.hero-meta b{font-size:30px}.section-head{align-items:flex-start;flex-direction:column;gap:8px}.about{padding-bottom:44px}.about-grid{grid-template-columns:1fr;box-shadow:4px 4px 0 var(--blue)}.about-grid>*+*{border-left:0;border-top:2px solid var(--ink)}.works{padding:24px 0 60px}.project{box-shadow:4px 4px 0 var(--ink);margin-bottom:20px}.project-body{grid-template-columns:1fr}.project-copy{padding:24px}.project-visual{border-left:0!important;border-right:0!important;border-top:2px solid var(--ink);min-height:260px}.project-body.reverse .project-copy{order:0}.project-body.reverse .project-visual{order:1}.flow-visual img{min-height:120px}.flow-visual img:nth-child(3){min-height:160px}.contact{padding-bottom:60px}.contact-card{grid-template-columns:1fr;box-shadow:4px 4px 0 var(--ink)}.footer .wrap{flex-direction:column;gap:6px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap topline"><span class="site-name">陈日坚 / 个人主页</span><nav aria-label="页面导航"><a href="#about">关于我</a><a href="#works">作品</a><a href="#contact">联系</a></nav></header>
+  <main>
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="eyebrow">陈日坚 · 大三学生</div>
+      <h1 id="hero-title">我在AI水课<br><em>学到的东西</em></h1>
+      <div class="hero-bottom">
+        <p>这里收录了我的数据分析、流程梳理和创意实验。每个作品都从一个具体问题出发，再用 AI 工具把想法变成看得见、能打开的成果。</p>
+        <div class="hero-meta"><b>03</b>个方向 · 持续更新</div>
+      </div>
+    </section>
+
+    <section class="wrap about" id="about" aria-labelledby="about-title">
+      <div class="section-head"><h2 id="about-title">关于我</h2><span>ABOUT / CHEN RIJIAN</span></div>
+      <div class="about-grid">
+        <div class="about-lead">你好，<br>我是陈日坚。</div>
+        <p class="about-copy">我是一名大三学生。这个网站不是一份正式简历，而是我学习 AI 时留下的实验记录。我正在尝试把课堂任务整理成真正能打开、能播放、也能继续改进的作品。</p>
+        <div class="about-meta"><div><b>身份</b>大三学生</div><div><b>正在学习</b>AI 工具与数据分析</div><div><b>这个页面</b>个人作品与学习记录</div></div>
+      </div>
+    </section>
+
+    <section class="wrap works" id="works" aria-labelledby="works-title">
+      <div class="section-head"><h2 id="works-title">作品选集</h2><span>SELECTED WORKS / 2026</span></div>
+
+      <article class="project">
+        <div class="project-top"><span><span class="number">01 /</span> 数据分析</span><span class="type">交互式 HTML 仪表盘</span></div>
+        <div class="project-body">
+          <div class="project-copy"><span class="tag">从数据到洞察</span><h3>学生成绩<br>分析仪表盘</h3><p>把数据清理、统计比较、模型评估与群体分析整理到同一个可交互页面里。可以查看分析图表、筛选不同视图，也能继续读项目报告。</p><a class="btn" href="projects/sc_edu_dashboard_html/index.html" target="_blank" rel="noopener"><span>打开交互式仪表盘</span><span class="arrow">↗</span></a></div>
+          <div class="project-visual dashboard" aria-label="数据图表风格预览">
+            <div class="dashboard-cover"><div class="dash-head"><span><i></i>SC_EDU / ANALYTICS</span><span>REPORT 01</span></div><div><div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="dash-foot"><span>分布 · 关系 · 预测</span><span>探索数据</span></div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-top"><span><span class="number">02 /</span> 流程设计</span><span class="type">PPT 自动化工作流</span></div>
+        <div class="project-body reverse">
+          <div class="project-copy"><span class="tag">把重复步骤连起来</span><h3>从素材到<br>可编辑 PPT</h3><p>将原料整理、模板分析、路线选择和质量检查串成一条生产线。另一个版本把输入、工作区与交付物的关系画得更清楚。</p></div>
+          <div class="project-visual flow-visual" aria-label="PPT 生产流程图"><img src="assets/ppt-production-workflow-preview.png" alt="素材、模板、工作区和交付物组成的PPT流程图"><img src="assets/ppt-production-line-preview.png" alt="包含质检与修复回路的PPT生产线流程图"><img src="assets/reflection-mode-system-preview.png" alt="生成、批评、精炼的反思模式迭代回路"></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-top"><span><span class="number">03 /</span> 创意实验</span><span class="type">视频小作品</span></div>
+        <div class="project-body">
+          <div class="project-copy"><span class="tag">认真学习，认真笑</span><h3>科比 × 奶龙<br>大笑时刻</h3><p>把熟悉的篮球记忆和奶龙的搞笑气质放在一起，做成一个轻松的短视频。学习作品集也要留一点快乐的位置。</p></div>
+          <div class="project-visual video-wrap"><video controls preload="metadata" playsinline aria-label="科比奶龙大笑短视频"><source src="assets/kobe-24-wink-laugh.mp4" type="video/mp4">当前浏览器不支持播放此视频。</video></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card"><div><h2 id="contact-title">找到我。</h2><p>这个主页和相关作品会继续更新。GitHub 地址和联系方式补充后，可以从这里直接找到我。</p></div><div class="contact-links"><div class="contact-item"><span>GitHub</span><span>待填写</span></div><div class="contact-item"><span>联系方式</span><span>待填写</span></div></div></div>
+    </section>
+
+  </main>
+  <footer class="footer"><div class="wrap"><span>陈日坚 · 个人 AI 学习作品集 · 2026</span><span>保持好奇，继续动手。</span></div></footer>
+</body>
+</html>
