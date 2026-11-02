@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="陈日坚的个人主页，记录 AI 课程作品、DeepSeek Harness 与 dsh-tui 实践。">
+  <title>陈日坚的个人主页</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <style>
+    :root{--bg:#fff;--text:#333;--muted:#6b7280;--line:#e5e7eb;--link:#224b8d;--link-hover:#16335f;--soft:#f7f8fa;--width:1240px;--sidebar:230px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.72}a{color:var(--link);text-decoration:none}a:hover,a:focus-visible{color:var(--link-hover);text-decoration:underline}img,video{max-width:100%}.masthead{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}.nav{width:min(var(--width),calc(100% - 40px));min-height:62px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{font-weight:700;color:#242424;white-space:nowrap}.nav-links{display:flex;align-items:center;gap:24px;font-size:14px;overflow-x:auto}.nav-links a{color:#59616a;white-space:nowrap}.nav-links a:hover{color:var(--link);text-decoration:none}.layout{width:min(var(--width),calc(100% - 40px));margin:34px auto 80px;display:grid;grid-template-columns:var(--sidebar) minmax(0,1fr);gap:60px;align-items:start}.sidebar{position:sticky;top:96px}.avatar-frame{width:176px;height:176px;border-radius:50%;overflow:hidden;border:1px solid var(--line);padding:5px;background:#111}.avatar-frame img{width:100%;height:100%;object-fit:contain;transform:rotate(-90deg) scale(1.7);transform-origin:center}.profile h1{font-size:25px;line-height:1.2;margin:18px 0 5px;color:#222}.profile .role{margin:0 0 18px;color:#555}.profile .bio{margin:0 0 20px}.profile-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}.profile-list li{padding:9px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:22px 1fr;gap:7px;align-items:start;font-size:14px}.profile-list .icon{color:#7b8188}.content{min-width:0}.intro{font-size:17px;margin:0 0 28px;color:#41464c}.section{padding:0 0 18px;margin:0 0 32px}.section h2{font-size:28px;line-height:1.25;margin:0 0 18px;padding-bottom:9px;border-bottom:1px solid var(--line);color:#242424}.section h3{font-size:19px;line-height:1.4;margin:0 0 7px;color:#2f3439}.news{list-style:none;margin:0;padding:0}.news li{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:8px 0;border-bottom:1px dashed #e8eaed}.news time{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}.project{display:grid;grid-template-columns:210px minmax(0,1fr);gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}.project:first-of-type{padding-top:0}.project-media{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:4px;overflow:hidden;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}.project-media img,.project-media video{width:100%;height:100%;object-fit:cover}.project-media.contain img{object-fit:contain;background:#fff}.project-copy p{margin:7px 0}.project-copy .meta{font-size:13px;color:var(--muted)}.project-copy .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}.text-link{font-size:14px;font-weight:600}.edu,.practice{padding:13px 0;border-bottom:1px solid var(--line)}.edu p,.practice p{margin:4px 0}.label{display:inline-block;margin-left:7px;padding:1px 7px;border-radius:3px;background:#eaf0f8;color:var(--link);font-size:12px;font-weight:700;vertical-align:2px}.contact-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.contact-card{border:1px solid var(--line);border-radius:4px;padding:16px;background:#fff}.contact-card strong{display:block;margin-bottom:3px;color:#2d3339}.footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px}.footer-inner{width:min(var(--width),calc(100% - 40px));margin:auto;display:flex;justify-content:space-between;gap:18px}.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:12px;top:12px;z-index:100;background:#fff;border:1px solid var(--line);padding:8px 12px}
+    @media(max-width:900px){.layout{grid-template-columns:180px minmax(0,1fr);gap:36px}.avatar-frame{width:145px;height:145px}.project{grid-template-columns:175px minmax(0,1fr)}}
+    @media(max-width:700px){html{scroll-padding-top:120px}.nav{align-items:flex-start;flex-direction:column;padding:13px 0;gap:8px}.nav-links{width:100%;gap:18px;padding-bottom:3px}.layout{display:block;margin-top:28px}.sidebar{position:static;display:grid;grid-template-columns:112px minmax(0,1fr);gap:20px;margin-bottom:38px}.avatar-frame{width:112px;height:112px}.profile h1{margin-top:2px}.profile .bio{margin-bottom:12px}.profile-list{grid-column:1/3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:0}.profile-list li{border-top:1px solid var(--line)}.project{grid-template-columns:1fr}.project-media{aspect-ratio:16/9}.contact-list{grid-template-columns:1fr}.footer-inner{flex-direction:column}.section h2{font-size:24px}}
+    @media(max-width:460px){.sidebar{grid-template-columns:88px minmax(0,1fr)}.avatar-frame{width:88px;height:88px}.profile-list{grid-template-columns:1fr}.profile-list li{grid-column:auto}.news li{grid-template-columns:76px 1fr}.layout,.nav,.footer-inner{width:min(100% - 28px,var(--width))}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="masthead">
+    <nav class="nav" aria-label="页面导航">
+      <a class="brand" href="#about">陈日坚的主页</a>
+      <div class="nav-links"><a href="#about">关于我</a><a href="#news">最近动态</a><a href="#projects">项目</a><a href="#education">教育经历</a><a href="#practice">技术实践</a><a href="#contact">联系</a></div>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="个人资料">
+      <div class="avatar-frame"><img src="assets/avatar-keyboard.jpg" alt="陈日坚使用的 ThinkPad 键盘"></div>
+      <div class="profile">
+        <h1>陈日坚</h1>
+        <p class="role">食品科学与工程 · 本科大三</p>
+        <p class="bio">我是个懒散的人。</p>
+      </div>
+      <ul class="profile-list">
+        <li><span class="icon">⌖</span><span>广药中山校区</span></li>
+        <li><span class="icon">✉</span><a href="mailto:3313956501@qq.com">3313956501@qq.com</a></li>
+        <li><span class="icon">◆</span><a href="https://gist.github.com/YeahS1r" target="_blank" rel="noopener">GitHub Gists</a></li>
+      </ul>
+    </aside>
+
+    <main class="content" id="main">
+      <section class="section" id="about">
+        <h2>关于我</h2>
+        <p class="intro">我是陈日坚，一名食品科学与工程专业的本科大三学生，现就读于广药中山校区。这个页面记录我在 AI 水课上完成的作品，以及我接触 DeepSeek Harness 和开源社区工具的过程。</p>
+        <p>我是个懒散的人。这里不包装成一份正式的学术履历，只保留我确实做过、能打开、也愿意继续修改的东西。</p>
+      </section>
+
+      <section class="section" id="news">
+        <h2>🔥 最近动态</h2>
+        <ul class="news">
+          <li><time datetime="2026-11">2026.11</time><span>整理个人主页，将课程成果、个人资料与技术实践放到同一个页面。</span></li>
+          <li><time datetime="2026-10">2026.10</time><span>完成学生成绩分析仪表盘，整理数据质量、模型与群体分析结果。</span></li>
+          <li><time datetime="2026-10">2026.10</time><span>整理 PPT 自动化生产流程和“生成—批评—精炼”的反思回路。</span></li>
+          <li><time datetime="2026-10">2026.10</time><span>完成“科比 × 奶龙”创意短视频实验。</span></li>
+        </ul>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>🧩 项目</h2>
+        <article class="project">
+          <div class="project-media"><img src="projects/sc_edu_dashboard_html/figures/02_score_distribution_20261029.png" alt="学生成绩分布分析图"></div>
+          <div class="project-copy"><h3>学生成绩分析仪表盘 <span class="label">数据分析</span></h3><p>将数据质量、统计比较、模型评估和群体分析整理为一个可交互的离线 HTML 页面。</p><p class="meta">内容：数据清理 · 统计分析 · 模型评估 · 可视化</p><div class="actions"><a class="text-link" href="projects/sc_edu_dashboard_html/index.html">查看交互式仪表盘 →</a></div></div>
+        </article>
+        <article class="project">
+          <div class="project-media contain"><img src="assets/ppt-production-workflow-preview.png" alt="PPT 自动化生产流程图"></div>
+          <div class="project-copy"><h3>PPT 自动化工作流 <span class="label">流程设计</span></h3><p>把素材读取、模板分析、页面生成、质量检查和交付串成可重复执行的流程。</p><p class="meta">内容：流程拆解 · 模板分析 · 质量检查 · 反思迭代</p></div>
+        </article>
+        <article class="project">
+          <div class="project-media"><video controls preload="metadata" playsinline aria-label="科比与奶龙创意短视频"><source src="assets/kobe-24-wink-laugh.mp4" type="video/mp4">当前浏览器不支持视频播放。</video></div>
+          <div class="project-copy"><h3>科比 × 奶龙 <span class="label">创意实验</span></h3><p>把熟悉的篮球元素和奶龙的搞笑气质放在一起，做成一个轻松的短视频实验。</p><p class="meta">形式：短视频</p></div>
+        </article>
+      </section>
+
+      <section class="section" id="education">
+        <h2>🎓 教育经历</h2>
+        <div class="edu"><h3>本科 · 食品科学与工程</h3><p>广药中山校区</p><p class="meta">当前年级：大三</p></div>
+      </section>
+
+      <section class="section" id="practice">
+        <h2>⌨ 技术实践</h2>
+        <div class="practice"><h3>DeepSeek Harness <span class="label">dsh</span></h3><p>正在接触和使用 DeepSeek Harness，并记录相关实践。</p></div>
+        <div class="practice"><h3>dsh-tui <span class="label">开源社区插件</span></h3><p>围绕 DeepSeek Harness 的开源社区插件，也是我目前关注的社区工具之一。</p></div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>✉ 联系方式</h2>
+        <div class="contact-list">
+          <a class="contact-card" href="mailto:3313956501@qq.com"><strong>邮箱</strong><span>3313956501@qq.com</span></a>
+          <a class="contact-card" href="https://gist.github.com/YeahS1r" target="_blank" rel="noopener"><strong>GitHub Gists</strong><span>gist.github.com/YeahS1r</span></a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer"><div class="footer-inner"><span>© 2026 陈日坚</span><span>最后更新：2026 年 11 月</span></div></footer>
+</body>
+</html>
