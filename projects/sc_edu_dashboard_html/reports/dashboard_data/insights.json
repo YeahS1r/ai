@@ -1,0 +1,244 @@
+{
+  "generated_at": "2026-11-02T18:29:45+08:00",
+  "stage": "insights",
+  "data_version": "3600258c1cd4e5dcdbc7d7943fe6921b7dc6cd19e7413c00b501f384a7eb7d2d",
+  "rows": 1000,
+  "overall_risk_rate": 0.285,
+  "top_drivers": [
+    {
+      "factor": "lunch",
+      "label": "家庭经济（午餐代理）",
+      "comparison": "free/reduced vs standard",
+      "effect_type": "cohens_d",
+      "effect_size": -0.6328,
+      "effect_label": "中",
+      "mean_diff_points": -8.64,
+      "p_value": 1.5829690427303214e-19,
+      "n_high": 355,
+      "n_low": 645,
+      "feasibility": 0.2
+    },
+    {
+      "factor": "test_prep",
+      "label": "备考课程",
+      "comparison": "completed vs none",
+      "effect_type": "cohens_d",
+      "effect_size": 0.5535,
+      "effect_label": "中",
+      "mean_diff_points": 7.63,
+      "p_value": 4.426725271318682e-17,
+      "n_high": 358,
+      "n_low": 642,
+      "feasibility": 0.9
+    },
+    {
+      "factor": "gender",
+      "label": "性别",
+      "comparison": "male vs female",
+      "effect_type": "cohens_d",
+      "effect_size": -0.2639,
+      "effect_label": "小",
+      "mean_diff_points": -3.73,
+      "p_value": 3.186197563875298e-05,
+      "n_high": 482,
+      "n_low": 518,
+      "feasibility": 0.0
+    },
+    {
+      "factor": "parental_education",
+      "label": "父母学历",
+      "comparison": "some high school vs master's degree",
+      "effect_type": "eta_squared",
+      "effect_size": 0.0513,
+      "effect_label": "小",
+      "mean_diff_points": 10.5,
+      "p_value": 4.381046480940965e-10,
+      "n_high": 1000,
+      "n_low": 0,
+      "feasibility": 0.1
+    },
+    {
+      "factor": "race_ethnicity",
+      "label": "族裔分组（敏感）",
+      "comparison": "group A vs group E",
+      "effect_type": "eta_squared",
+      "effect_size": 0.0353,
+      "effect_label": "可忽略",
+      "mean_diff_points": 9.76,
+      "p_value": 3.22586931610228e-07,
+      "n_high": 1000,
+      "n_low": 0,
+      "feasibility": 0.0
+    }
+  ],
+  "risk_segments": [
+    {
+      "name": "免费/减价午餐 + 未参加",
+      "criteria": "lunch=free/reduced & test_prep=none",
+      "n": 224,
+      "risk_rate": 0.5223,
+      "delta_vs_overall": 0.2373,
+      "avg_score": 58.95
+    },
+    {
+      "name": "族裔组 A",
+      "criteria": "race_ethnicity=group A",
+      "n": 89,
+      "risk_rate": 0.4494,
+      "delta_vs_overall": 0.1644,
+      "avg_score": 62.99
+    },
+    {
+      "name": "高中",
+      "criteria": "parental_education=high school",
+      "n": 196,
+      "risk_rate": 0.3878,
+      "delta_vs_overall": 0.1028,
+      "avg_score": 63.1
+    },
+    {
+      "name": "高中未毕业",
+      "criteria": "parental_education=some high school",
+      "n": 179,
+      "risk_rate": 0.3575,
+      "delta_vs_overall": 0.0725,
+      "avg_score": 65.11
+    },
+    {
+      "name": "族裔组 B",
+      "criteria": "race_ethnicity=group B",
+      "n": 190,
+      "risk_rate": 0.3105,
+      "delta_vs_overall": 0.0255,
+      "avg_score": 65.47
+    },
+    {
+      "name": "族裔组 C",
+      "criteria": "race_ethnicity=group C",
+      "n": 319,
+      "risk_rate": 0.3041,
+      "delta_vs_overall": 0.0191,
+      "avg_score": 67.13
+    },
+    {
+      "name": "免费/减价午餐 + 已参加",
+      "criteria": "lunch=free/reduced & test_prep=completed",
+      "n": 131,
+      "risk_rate": 0.2901,
+      "delta_vs_overall": 0.0051,
+      "avg_score": 67.76
+    },
+    {
+      "name": "副学士",
+      "criteria": "parental_education=associate's degree",
+      "n": 222,
+      "risk_rate": 0.2658,
+      "delta_vs_overall": -0.0192,
+      "avg_score": 69.57
+    },
+    {
+      "name": "标准午餐 + 未参加",
+      "criteria": "lunch=standard & test_prep=none",
+      "n": 418,
+      "risk_rate": 0.2584,
+      "delta_vs_overall": -0.0266,
+      "avg_score": 68.3
+    },
+    {
+      "name": "族裔组 D",
+      "criteria": "race_ethnicity=group D",
+      "n": 262,
+      "risk_rate": 0.2481,
+      "delta_vs_overall": -0.0369,
+      "avg_score": 69.18
+    },
+    {
+      "name": "大学肄业",
+      "criteria": "parental_education=some college",
+      "n": 226,
+      "risk_rate": 0.2434,
+      "delta_vs_overall": -0.0416,
+      "avg_score": 68.48
+    },
+    {
+      "name": "学士",
+      "criteria": "parental_education=bachelor's degree",
+      "n": 118,
+      "risk_rate": 0.178,
+      "delta_vs_overall": -0.107,
+      "avg_score": 71.92
+    },
+    {
+      "name": "族裔组 E",
+      "criteria": "race_ethnicity=group E",
+      "n": 140,
+      "risk_rate": 0.1714,
+      "delta_vs_overall": -0.1136,
+      "avg_score": 72.75
+    },
+    {
+      "name": "硕士",
+      "criteria": "parental_education=master's degree",
+      "n": 59,
+      "risk_rate": 0.1695,
+      "delta_vs_overall": -0.1155,
+      "avg_score": 73.6
+    },
+    {
+      "name": "标准午餐 + 已参加",
+      "criteria": "lunch=standard & test_prep=completed",
+      "n": 227,
+      "risk_rate": 0.0969,
+      "delta_vs_overall": -0.1881,
+      "avg_score": 75.51
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": 1,
+      "action": "对低经济背景（免费/减价午餐）且未参加备考课程的学生，优先提供免费备考课程",
+      "target": "lunch=free/reduced 且 test_prep=none（当前 n=224）",
+      "expected_effect": "备考课程组内平均分差约 7.6 分；低经济未备考组风险率 52.2%（整体 28.5%）",
+      "measurement": "干预前后该子组风险率与平均分变化；用同批未干预学生做对照",
+      "evidence": "insights.json:top_drivers[test_prep] + risk_segments"
+    },
+    {
+      "priority": 2,
+      "action": "建立低经济背景学生的定向学业支持（辅导、学习资源、出勤跟踪），而非改变家庭经济状况本身",
+      "target": "lunch=free/reduced（n=355）",
+      "expected_effect": "该组平均分比标准午餐组低 8.6 分（|d|=0.63）",
+      "measurement": "子组平均分与风险率定期跟踪；与标准午餐组的差距收敛程度",
+      "evidence": "insights.json:top_drivers[lunch]"
+    },
+    {
+      "priority": 3,
+      "action": "对写作/阅读相对薄弱的男生与数学相对薄弱的女生做差异化教学辅导",
+      "target": "按性别的科目分化（数学男高、阅读写作女高）",
+      "expected_effect": "性别对平均分 |d|=0.26（小效应），属不可干预因素的缓解",
+      "measurement": "分性别分科目平均分差距；辅导后差距变化",
+      "evidence": "insights.json:top_drivers[gender]"
+    },
+    {
+      "priority": 4,
+      "action": "为高风险学生建立预警名单（基于模型预测概率，人工复核后使用）",
+      "target": "模型预测高风险概率 top 20% 的学生",
+      "expected_effect": "见 model_card.md 的 PR-AUC 与混淆矩阵；必须配合人工复核，避免标签化",
+      "measurement": "预警命中率（recall）与误报成本；每学期校准模型",
+      "evidence": "model.json:classification + fairness"
+    }
+  ],
+  "limitations": [
+    "观测数据，不能做因果推断",
+    "lunch 仅为家庭经济代理变量",
+    "race_ethnicity/parental_education 为敏感变量，仅做关联描述",
+    "无学校/地区/年级/年份字段",
+    "1,000 行，子组样本量有限"
+  ],
+  "figures": [
+    "06_driver_ranking_20261029.png",
+    "06_risk_segments_20261029.png",
+    "06_priority_matrix_20261029.png",
+    "06_lunch_prep_scores_20261029.png",
+    "06_risk_heatmap_20261029.png"
+  ]
+}
