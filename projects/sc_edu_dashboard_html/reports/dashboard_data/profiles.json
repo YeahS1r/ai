@@ -1,0 +1,263 @@
+{
+  "generated_at": "2026-10-29T07:45:48.470588+00:00",
+  "stage": "profiling",
+  "data_version": "3600258c1cd4",
+  "rows": 1000,
+  "figures": [
+    "05_k_selection_20261029.png",
+    "05_umap_clusters_20261029.png",
+    "05_pca_clusters_20261029.png",
+    "05_cluster_profile_heatmap_20261029.png",
+    "05_cluster_score_box_20261029.png"
+  ],
+  "k": 6,
+  "silhouette": 0.3169,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "name": "低SES·未备考·低成绩型",
+      "n": 224,
+      "share": 0.224,
+      "avg_score": 58.95,
+      "median_avg_score": 58.83,
+      "risk_rate": 0.5223,
+      "math_mean": 56.51,
+      "reading_mean": 61.6,
+      "writing_mean": 58.74,
+      "female_share": 0.5312,
+      "dominant_gender": "female",
+      "dominant_race": "group C",
+      "free_reduced_rate": 1.0,
+      "prep_completed_rate": 0.0,
+      "mean_edu_level": 2.07,
+      "top_features": [
+        "lunch_free_reduced",
+        "prep_completed"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "name": "高SES·未备考·男生为主·中成绩型",
+      "n": 203,
+      "share": 0.203,
+      "avg_score": 65.49,
+      "median_avg_score": 66.67,
+      "risk_rate": 0.3251,
+      "math_mean": 69.83,
+      "reading_mean": 64.72,
+      "writing_mean": 61.91,
+      "female_share": 0.0,
+      "dominant_gender": "male",
+      "dominant_race": "group D",
+      "free_reduced_rate": 0.0,
+      "prep_completed_rate": 0.0,
+      "mean_edu_level": 2.0,
+      "top_features": [
+        "gender_male",
+        "prep_completed"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "name": "低SES·已备考·中成绩型",
+      "n": 131,
+      "share": 0.131,
+      "avg_score": 67.76,
+      "median_avg_score": 69.0,
+      "risk_rate": 0.2901,
+      "math_mean": 63.05,
+      "reading_mean": 69.87,
+      "writing_mean": 70.35,
+      "female_share": 0.5344,
+      "dominant_gender": "female",
+      "dominant_race": "group C",
+      "free_reduced_rate": 1.0,
+      "prep_completed_rate": 1.0,
+      "mean_edu_level": 2.22,
+      "top_features": [
+        "lunch_free_reduced",
+        "prep_completed"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "name": "高SES·未备考·女生为主·中成绩型",
+      "n": 215,
+      "share": 0.215,
+      "avg_score": 70.96,
+      "median_avg_score": 71.0,
+      "risk_rate": 0.1953,
+      "math_mean": 66.53,
+      "reading_mean": 73.39,
+      "writing_mean": 72.97,
+      "female_share": 1.0,
+      "dominant_gender": "female",
+      "dominant_race": "group C",
+      "free_reduced_rate": 0.0,
+      "prep_completed_rate": 0.0,
+      "mean_edu_level": 2.2,
+      "top_features": [
+        "gender_male",
+        "prep_completed"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "name": "高SES·已备考·男生为主·高成绩型",
+      "n": 113,
+      "share": 0.113,
+      "avg_score": 73.51,
+      "median_avg_score": 73.33,
+      "risk_rate": 0.1416,
+      "math_mean": 75.96,
+      "reading_mean": 72.6,
+      "writing_mean": 71.98,
+      "female_share": 0.0,
+      "dominant_gender": "male",
+      "dominant_race": "group C",
+      "free_reduced_rate": 0.0,
+      "prep_completed_rate": 1.0,
+      "mean_edu_level": 1.79,
+      "top_features": [
+        "prep_completed",
+        "gender_male"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "name": "高SES·已备考·女生为主·高成绩型",
+      "n": 114,
+      "share": 0.114,
+      "avg_score": 77.48,
+      "median_avg_score": 76.0,
+      "risk_rate": 0.0526,
+      "math_mean": 71.13,
+      "reading_mean": 79.8,
+      "writing_mean": 81.51,
+      "female_share": 1.0,
+      "dominant_gender": "female",
+      "dominant_race": "group C",
+      "free_reduced_rate": 0.0,
+      "prep_completed_rate": 1.0,
+      "mean_edu_level": 2.17,
+      "top_features": [
+        "prep_completed",
+        "gender_male"
+      ]
+    }
+  ],
+  "assignments_file": "data/processed/clusters.parquet",
+  "k_selection": [
+    {
+      "k": 3,
+      "silhouette": 0.2507,
+      "inertia": 3211.68
+    },
+    {
+      "k": 4,
+      "silhouette": 0.2431,
+      "inertia": 2776.14
+    },
+    {
+      "k": 5,
+      "silhouette": 0.2931,
+      "inertia": 2408.18
+    },
+    {
+      "k": 6,
+      "silhouette": 0.3169,
+      "inertia": 2172.66
+    }
+  ],
+  "features_used": [
+    "gender_male",
+    "edu_level",
+    "lunch_free_reduced",
+    "prep_completed",
+    "avg_score"
+  ],
+  "features_described": [
+    "gender_male",
+    "race_A",
+    "race_B",
+    "race_C",
+    "race_D",
+    "race_E",
+    "edu_level",
+    "edu_high_school_or_less",
+    "edu_some_college",
+    "edu_bachelor_or_higher",
+    "lunch_free_reduced",
+    "prep_completed"
+  ],
+  "feature_labels": {
+    "gender_male": "男性",
+    "race_A": "族裔 A",
+    "race_B": "族裔 B",
+    "race_C": "族裔 C",
+    "race_D": "族裔 D",
+    "race_E": "族裔 E",
+    "edu_level": "父母教育年限(0-5)",
+    "edu_high_school_or_less": "父母高中及以下",
+    "edu_some_college": "父母大学肄业",
+    "edu_bachelor_or_higher": "父母本科及以上",
+    "lunch_free_reduced": "免费/减价午餐(SES 代理)",
+    "prep_completed": "完成备考课程",
+    "avg_score": "综合分 avg_score"
+  },
+  "clustering": {
+    "method": "StandardScaler -> PCA -> KMeans",
+    "k_range": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "selected_k": 6,
+    "excluded_features": [
+      "race_A",
+      "race_B",
+      "race_C",
+      "race_D",
+      "race_E",
+      "edu_high_school_or_less",
+      "edu_some_college",
+      "edu_bachelor_or_higher"
+    ],
+    "notes": [
+      "聚类特征 = 4 个核心背景特征 + 综合分 avg_score；risk 标签不参与聚类，避免与阈值定义同义反复。",
+      "race_* one-hot 共线且会主导欧氏距离（实测聚类退化为族裔分组），族裔仅用于画像描述，不参与聚类。",
+      "edu_* 细分 one-hot 与有序 edu_level 重复，不重复入模。",
+      "三科成绩高度相关（reading/writing r=0.955），只取综合分。"
+    ]
+  },
+  "pca": {
+    "n_components": 5,
+    "explained_variance_ratio": [
+      0.2889,
+      0.2116,
+      0.2026,
+      0.1913,
+      0.1056
+    ],
+    "cumulative_explained": 1.0
+  },
+  "umap": {
+    "available": true,
+    "backend": "umap",
+    "version": "0.5.12",
+    "n_neighbors": 15,
+    "min_dist": 0.1,
+    "metric": "euclidean",
+    "init": "random",
+    "fallback": false
+  },
+  "seed": 42,
+  "limitations": [
+    "观测数据、无随机化设置，聚类与群组差异只能表述为关联，不能做因果推断。",
+    "聚类输入为 4 个核心背景特征 + 综合分（非全部 12 个背景特征）；族裔不参与聚类、仅用于画像描述，簇边界是探索性划分。",
+    "KMeans 假设球形簇，簇边界是近似划分；k=3-6 的轮廓系数差异可能较小，命名以主导特征为准。",
+    "race_ethnicity / lunch / parental_education 为敏感变量，画像命名避免价值判断，不用于个体归因。",
+    "1,000 行样本，族裔 A（89 人）与硕士学历（59 人）子组较小，簇内比例波动需谨慎解读。"
+  ]
+}
